@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,234 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-wX-Kep">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="BEER"/>
+                                <connections>
+                                    <action selector="drinkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFL-cm-W39"/>
+                                    <segue destination="Ufk-XC-dhn" kind="presentation" id="dEe-l2-4i9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-Pf-y9N">
+                                <rect key="frame" x="0.0" y="316.5" width="414" height="273"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="WINE"/>
+                                <connections>
+                                    <action selector="drinkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B2K-tg-oG1"/>
+                                    <segue destination="Ufk-XC-dhn" kind="presentation" id="e3e-k8-uI7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocr-u1-RbB">
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="VODKA"/>
+                                <connections>
+                                    <action selector="drinkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5H-9O-EjI"/>
+                                    <segue destination="Ufk-XC-dhn" kind="presentation" id="vBu-e9-IpS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ocr-u1-RbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="277-G0-77w"/>
+                            <constraint firstItem="ocr-u1-RbB" firstAttribute="top" secondItem="V2a-Pf-y9N" secondAttribute="bottom" id="4Ga-4A-FlW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ocr-u1-RbB" secondAttribute="bottom" id="BA6-xm-bek"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V2a-Pf-y9N" secondAttribute="trailing" id="Ert-dZ-GRQ"/>
+                            <constraint firstItem="d7o-wX-Kep" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gn2-Gk-LhT"/>
+                            <constraint firstItem="d7o-wX-Kep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PME-08-4fc"/>
+                            <constraint firstItem="V2a-Pf-y9N" firstAttribute="height" secondItem="ocr-u1-RbB" secondAttribute="height" id="Pvx-mh-fzK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7o-wX-Kep" secondAttribute="trailing" id="QzL-bh-oHk"/>
+                            <constraint firstItem="V2a-Pf-y9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XiH-4H-WWR"/>
+                            <constraint firstItem="d7o-wX-Kep" firstAttribute="height" secondItem="V2a-Pf-y9N" secondAttribute="height" id="coc-3B-MBg"/>
+                            <constraint firstItem="V2a-Pf-y9N" firstAttribute="top" secondItem="d7o-wX-Kep" secondAttribute="bottom" id="iSD-Vn-QLr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ocr-u1-RbB" secondAttribute="trailing" id="m6y-eM-Aph"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="RzI-P2-ZUy">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ufk-XC-dhn" customClass="ViewController2" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bz9-Kt-tc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the number of bottles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-mQ-YlP">
+                                <rect key="frame" x="104.5" y="431" width="205.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-KX-ljt">
+                                <rect key="frame" x="351" y="822" width="53" height="30"/>
+                                <state key="normal" title="confirm"/>
+                                <connections>
+                                    <segue destination="mhP-hx-8OP" kind="presentation" id="AKS-3Y-HO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7vc-oT-Wkg" firstAttribute="trailing" secondItem="0FZ-KX-ljt" secondAttribute="trailing" constant="10" id="Fko-1W-FXN"/>
+                            <constraint firstItem="7vc-oT-Wkg" firstAttribute="bottom" secondItem="0FZ-KX-ljt" secondAttribute="bottom" constant="10" id="GaK-BJ-bEg"/>
+                            <constraint firstItem="2Te-mQ-YlP" firstAttribute="centerY" secondItem="Bz9-Kt-tc2" secondAttribute="centerY" id="Sw5-51-6x0"/>
+                            <constraint firstItem="2Te-mQ-YlP" firstAttribute="centerX" secondItem="Bz9-Kt-tc2" secondAttribute="centerX" id="fxH-Ry-7c8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7vc-oT-Wkg"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="2Te-mQ-YlP" id="42g-KH-jYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXA-ct-sqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="iqA-6e-oWJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mhP-hx-8OP" customClass="ViewController3" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5k-vf-GtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIn-U3-TJN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="MALE"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="mhP-hx-8OP" eventType="touchUpInside" id="88N-1Q-5Gv"/>
+                                    <segue destination="LPJ-iT-Uy6" kind="presentation" id="txh-5b-znK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B74-cG-mPY">
+                                <rect key="frame" x="0.0" y="316.5" width="414" height="273"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="FEMALE"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="mhP-hx-8OP" eventType="touchUpInside" id="4hT-7Q-ug5"/>
+                                    <segue destination="LPJ-iT-Uy6" kind="presentation" id="X91-OV-XtB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXy-HB-cwT">
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="CHILD"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="mhP-hx-8OP" eventType="touchUpInside" id="JyY-ki-Ff0"/>
+                                    <segue destination="LPJ-iT-Uy6" kind="presentation" id="bU6-5T-q6S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jbe-5I-nvb" firstAttribute="trailing" secondItem="jIn-U3-TJN" secondAttribute="trailing" id="3yN-Ja-MoW"/>
+                            <constraint firstItem="jIn-U3-TJN" firstAttribute="leading" secondItem="Jbe-5I-nvb" secondAttribute="leading" id="8DS-2j-Jc1"/>
+                            <constraint firstItem="B74-cG-mPY" firstAttribute="trailing" secondItem="Jbe-5I-nvb" secondAttribute="trailing" id="G49-oC-3Md"/>
+                            <constraint firstItem="jIn-U3-TJN" firstAttribute="height" secondItem="B74-cG-mPY" secondAttribute="height" id="Kjd-qD-YKB"/>
+                            <constraint firstItem="B74-cG-mPY" firstAttribute="height" secondItem="RXy-HB-cwT" secondAttribute="height" id="LPm-fA-9za"/>
+                            <constraint firstItem="B74-cG-mPY" firstAttribute="top" secondItem="jIn-U3-TJN" secondAttribute="bottom" id="aZM-8g-DEO"/>
+                            <constraint firstItem="B74-cG-mPY" firstAttribute="leading" secondItem="Jbe-5I-nvb" secondAttribute="leading" id="cJw-9P-Ez8"/>
+                            <constraint firstItem="RXy-HB-cwT" firstAttribute="top" secondItem="B74-cG-mPY" secondAttribute="bottom" id="gyQ-QG-1Qi"/>
+                            <constraint firstItem="jIn-U3-TJN" firstAttribute="top" secondItem="Jbe-5I-nvb" secondAttribute="top" id="s5n-LX-UGb"/>
+                            <constraint firstItem="Jbe-5I-nvb" firstAttribute="trailing" secondItem="RXy-HB-cwT" secondAttribute="trailing" id="wOb-QA-hlB"/>
+                            <constraint firstItem="RXy-HB-cwT" firstAttribute="leading" secondItem="Jbe-5I-nvb" secondAttribute="leading" id="yBG-2R-jGH"/>
+                            <constraint firstItem="RXy-HB-cwT" firstAttribute="bottom" secondItem="Jbe-5I-nvb" secondAttribute="bottom" id="zqh-Pp-PAC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jbe-5I-nvb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcZ-LO-Skf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1918.840579710145" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="0LX-0g-TQ0">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="LPJ-iT-Uy6" customClass="ViewController4" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tn9-jH-Aef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter body weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Dy-N8-oMb">
+                                <rect key="frame" x="134.5" y="431" width="145" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jB-YA-N9r">
+                                <rect key="frame" x="351" y="822" width="53" height="30"/>
+                                <state key="normal" title="confirm"/>
+                                <connections>
+                                    <segue destination="Eek-8V-Wgi" kind="presentation" id="xJT-8l-Ite"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a2n-vt-v1a" firstAttribute="trailing" secondItem="8jB-YA-N9r" secondAttribute="trailing" constant="10" id="1dZ-J0-tWD"/>
+                            <constraint firstItem="6Dy-N8-oMb" firstAttribute="centerY" secondItem="Tn9-jH-Aef" secondAttribute="centerY" id="MRm-cu-kWS"/>
+                            <constraint firstItem="a2n-vt-v1a" firstAttribute="bottom" secondItem="8jB-YA-N9r" secondAttribute="bottom" constant="10" id="cLA-Ke-pCA"/>
+                            <constraint firstItem="6Dy-N8-oMb" firstAttribute="centerX" secondItem="Tn9-jH-Aef" secondAttribute="centerX" id="qaD-vF-NSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2n-vt-v1a"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="6Dy-N8-oMb" id="RJN-dk-bVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14D-3s-pDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="WdR-ia-wlD">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Eek-8V-Wgi" customClass="ViewController5" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7E6-2F-2T1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92z-WB-Ac6">
+                                <rect key="frame" x="92" y="388.5" width="230" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR0-LR-Ew3">
+                                <rect key="frame" x="351" y="822" width="53" height="30"/>
+                                <state key="normal" title="confirm"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ua8-lq-BNT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="92z-WB-Ac6" firstAttribute="centerX" secondItem="7E6-2F-2T1" secondAttribute="centerX" id="X38-Jb-4yc"/>
+                            <constraint firstItem="92z-WB-Ac6" firstAttribute="centerY" secondItem="7E6-2F-2T1" secondAttribute="centerY" id="YlE-0W-lXR"/>
+                            <constraint firstItem="gRg-TX-RTR" firstAttribute="bottom" secondItem="KR0-LR-Ew3" secondAttribute="bottom" constant="10" id="Zob-SE-WoD"/>
+                            <constraint firstItem="gRg-TX-RTR" firstAttribute="trailing" secondItem="KR0-LR-Ew3" secondAttribute="trailing" constant="10" id="z5p-T0-hua"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gRg-TX-RTR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbw-Cn-KN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3660.8695652173915" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="X91-OV-XtB"/>
+        <segue reference="dEe-l2-4i9"/>
+    </inferredMetricsTieBreakers>
 </document>

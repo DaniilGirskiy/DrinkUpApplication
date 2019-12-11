@@ -14,6 +14,11 @@
 		52E537AF239D327900ABA126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E537AE239D327900ABA126 /* Assets.xcassets */; };
 		52E537B2239D327900ABA126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E537B0239D327900ABA126 /* LaunchScreen.storyboard */; };
 		52E537BD239D327900ABA126 /* DrinkUpApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E537BC239D327900ABA126 /* DrinkUpApplicationTests.swift */; };
+		52E537C9239D385C00ABA126 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E537C8239D385C00ABA126 /* ViewController2.swift */; };
+		52EE9453239E4D1400866D6F /* DrinkUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE9452239E4D1400866D6F /* DrinkUpModel.swift */; };
+		52FB9FD5239D8CAB00BCD6AA /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB9FD4239D8CAB00BCD6AA /* ViewController3.swift */; };
+		52FB9FD7239D935D00BCD6AA /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB9FD6239D935D00BCD6AA /* ViewController4.swift */; };
+		52FB9FD9239D95FD00BCD6AA /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB9FD8239D95FD00BCD6AA /* ViewController5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		52E537B8239D327900ABA126 /* DrinkUpApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkUpApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E537BC239D327900ABA126 /* DrinkUpApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUpApplicationTests.swift; sourceTree = "<group>"; };
 		52E537BE239D327900ABA126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E537C8239D385C00ABA126 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		52EE9452239E4D1400866D6F /* DrinkUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUpModel.swift; sourceTree = "<group>"; };
+		52FB9FD4239D8CAB00BCD6AA /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		52FB9FD6239D935D00BCD6AA /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		52FB9FD8239D95FD00BCD6AA /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,11 @@
 				52E537AE239D327900ABA126 /* Assets.xcassets */,
 				52E537B0239D327900ABA126 /* LaunchScreen.storyboard */,
 				52E537B3239D327900ABA126 /* Info.plist */,
+				52E537C8239D385C00ABA126 /* ViewController2.swift */,
+				52FB9FD4239D8CAB00BCD6AA /* ViewController3.swift */,
+				52FB9FD6239D935D00BCD6AA /* ViewController4.swift */,
+				52FB9FD8239D95FD00BCD6AA /* ViewController5.swift */,
+				52EE9452239E4D1400866D6F /* DrinkUpModel.swift */,
 			);
 			path = DrinkUpApplication;
 			sourceTree = "<group>";
@@ -200,9 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FB9FD5239D8CAB00BCD6AA /* ViewController3.swift in Sources */,
+				52FB9FD7239D935D00BCD6AA /* ViewController4.swift in Sources */,
 				52E537AA239D327900ABA126 /* ViewController.swift in Sources */,
+				52EE9453239E4D1400866D6F /* DrinkUpModel.swift in Sources */,
+				52E537C9239D385C00ABA126 /* ViewController2.swift in Sources */,
 				52E537A6239D327900ABA126 /* AppDelegate.swift in Sources */,
 				52E537A8239D327900ABA126 /* SceneDelegate.swift in Sources */,
+				52FB9FD9239D95FD00BCD6AA /* ViewController5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
