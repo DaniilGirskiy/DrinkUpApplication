@@ -8,6 +8,12 @@
 
 import Foundation
 
+class DrinkUpFormatter {
+    func format(_ info: DrinkUpInformation) -> String {
+        return "\(info.drink!.rawValue), \(info.numberOfBottles!), \(info.gender!.rawValue), \(info.bodyWeight!)"
+    }
+}
+
 struct DrinkUpInformation {
     enum Drink: Float {
         case beer = 5 // alcohol strength

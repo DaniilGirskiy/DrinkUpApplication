@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController3: UIViewController {
-    var info = DrinkUpInformation()
+    var info: DrinkUpInformation!
     
     override func viewDidLoad() {
         super.viewDidLoad()

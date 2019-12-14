@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController5: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
-    var info = DrinkUpInformation()
+    var info: DrinkUpInformation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textLabel.text = "\(info.drink!.rawValue), \(info.numberOfBottles!), \(info.gender!.rawValue), \(info.bodyWeight!)"
+        let formatter = DrinkUpFormatter()
+        textLabel.text = formatter.format(info)
         // Do any additional setup after loading the view.
     }
    

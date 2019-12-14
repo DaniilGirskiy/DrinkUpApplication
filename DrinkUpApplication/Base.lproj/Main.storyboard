@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +46,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ocr-u1-RbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="277-G0-77w"/>
                             <constraint firstItem="ocr-u1-RbB" firstAttribute="top" secondItem="V2a-Pf-y9N" secondAttribute="bottom" id="4Ga-4A-FlW"/>
@@ -68,13 +71,13 @@
         <!--View Controller2-->
         <scene sceneID="RzI-P2-ZUy">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ufk-XC-dhn" customClass="ViewController2" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ufk-XC-dhn" customClass="ViewController2" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bz9-Kt-tc2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the number of bottles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-mQ-YlP">
-                                <rect key="frame" x="104.5" y="431" width="205.5" height="34"/>
+                                <rect key="frame" x="108" y="433" width="198.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
@@ -93,7 +96,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7vc-oT-Wkg" firstAttribute="trailing" secondItem="0FZ-KX-ljt" secondAttribute="trailing" constant="10" id="Fko-1W-FXN"/>
                             <constraint firstItem="7vc-oT-Wkg" firstAttribute="bottom" secondItem="0FZ-KX-ljt" secondAttribute="bottom" constant="10" id="GaK-BJ-bEg"/>
@@ -116,7 +119,7 @@
         <!--View Controller3-->
         <scene sceneID="iqA-6e-oWJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mhP-hx-8OP" customClass="ViewController3" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mhP-hx-8OP" customClass="ViewController3" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5k-vf-GtQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +152,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jbe-5I-nvb" firstAttribute="trailing" secondItem="jIn-U3-TJN" secondAttribute="trailing" id="3yN-Ja-MoW"/>
                             <constraint firstItem="jIn-U3-TJN" firstAttribute="leading" secondItem="Jbe-5I-nvb" secondAttribute="leading" id="8DS-2j-Jc1"/>
@@ -169,18 +172,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcZ-LO-Skf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918.840579710145" y="129.91071428571428"/>
+            <point key="canvasLocation" x="1964" y="130"/>
         </scene>
         <!--View Controller4-->
         <scene sceneID="0LX-0g-TQ0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="LPJ-iT-Uy6" customClass="ViewController4" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LPJ-iT-Uy6" customClass="ViewController4" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tn9-jH-Aef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter body weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Dy-N8-oMb">
-                                <rect key="frame" x="134.5" y="431" width="145" height="34"/>
+                                <rect key="frame" x="138" y="433" width="138" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -188,7 +191,7 @@
                                 <rect key="frame" x="374" y="822" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
-                                    <segue destination="Eek-8V-Wgi" kind="presentation" id="xJT-8l-Ite"/>
+                                    <segue destination="hZo-Sj-HNI" kind="presentation" id="rUL-CP-VPY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-IT-6P5">
@@ -200,7 +203,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a2n-vt-v1a" firstAttribute="trailing" secondItem="8jB-YA-N9r" secondAttribute="trailing" constant="10" id="1dZ-J0-tWD"/>
                             <constraint firstItem="6Dy-N8-oMb" firstAttribute="centerY" secondItem="Tn9-jH-Aef" secondAttribute="centerY" id="MRm-cu-kWS"/>
@@ -218,10 +221,28 @@
             </objects>
             <point key="canvasLocation" x="2798.5507246376815" y="129.91071428571428"/>
         </scene>
-        <!--View Controller5-->
+        <!--Navigation Controller-->
+        <scene sceneID="wLg-2h-bcS">
+            <objects>
+                <navigationController id="hZo-Sj-HNI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c2R-h1-4aJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Eek-8V-Wgi" kind="relationship" relationship="rootViewController" id="GnO-jv-P1P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIf-ve-bNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4527" y="166"/>
+        </scene>
+        <!--результаты ебиомать-->
         <scene sceneID="WdR-ia-wlD">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Eek-8V-Wgi" customClass="ViewController5" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbw-Cn-KN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="arB-mh-8Vz" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController id="Eek-8V-Wgi" customClass="ViewController5" customModule="DrinkUpApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7E6-2F-2T1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +257,7 @@
                                 <rect key="frame" x="351" y="822" width="53" height="30"/>
                                 <state key="normal" title="confirm"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ua8-lq-BNT"/>
+                                    <segue destination="arB-mh-8Vz" kind="unwind" unwindAction="comeBack:" id="3dT-SM-4PV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-M5-psk">
@@ -257,14 +278,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gRg-TX-RTR"/>
                     </view>
+                    <navigationItem key="navigationItem" title="результаты ебиомать" id="vdC-jH-fj1">
+                        <barButtonItem key="leftBarButtonItem" title="закрыть" id="w79-t4-wvP">
+                            <connections>
+                                <segue destination="arB-mh-8Vz" kind="unwind" unwindAction="comeBack:" id="WZo-bt-yl4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="готово" style="done" id="alY-dO-9Wz">
+                            <connections>
+                                <segue destination="arB-mh-8Vz" kind="unwind" unwindAction="comeBack:" id="dH2-Ik-67x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textLabel" destination="92z-WB-Ac6" id="hZP-du-Z27"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbw-Cn-KN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="arB-mh-8Vz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3660.8695652173915" y="129.91071428571428"/>
+            <point key="canvasLocation" x="5599" y="165"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
