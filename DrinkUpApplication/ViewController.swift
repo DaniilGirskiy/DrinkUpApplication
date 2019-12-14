@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func comeBack (_ : UIStoryboardSegue) {
+        // действия при возвращении назад?
+    }
+    
+    
     @IBAction func drinkButtonPressed(_ sender: UIButton) {
     
         switch sender.tag {
@@ -35,7 +40,6 @@ class ViewController: UIViewController {
         guard let nextController = segue.destination as? ViewController2 else { return }
         
         nextController.info = info
-        
         
     }
 }

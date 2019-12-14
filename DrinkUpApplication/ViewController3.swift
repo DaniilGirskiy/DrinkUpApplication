@@ -11,11 +11,14 @@ import UIKit
 class ViewController3: UIViewController {
     var info = DrinkUpInformation()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func comeBack (_ : UIStoryboardSegue) {
+        // действия при возвращении назад?
     }
 
     @IBAction func genderButtonPressed(_ sender: UIButton) {

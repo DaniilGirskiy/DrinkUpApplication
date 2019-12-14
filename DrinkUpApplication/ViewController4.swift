@@ -19,6 +19,10 @@ class ViewController4: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func comeBack (_ : UIStoryboardSegue) {
+        // действия при возвращении назад?
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let nextController = segue.destination as? ViewController5 else { return }

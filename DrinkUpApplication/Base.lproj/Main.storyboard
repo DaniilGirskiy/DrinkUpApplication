@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ocr-u1-RbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="277-G0-77w"/>
                             <constraint firstItem="ocr-u1-RbB" firstAttribute="top" secondItem="V2a-Pf-y9N" secondAttribute="bottom" id="4Ga-4A-FlW"/>
@@ -76,21 +76,30 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the number of bottles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-mQ-YlP">
                                 <rect key="frame" x="104.5" y="431" width="205.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-KX-ljt">
-                                <rect key="frame" x="351" y="822" width="53" height="30"/>
-                                <state key="normal" title="confirm"/>
+                                <rect key="frame" x="374" y="822" width="30" height="30"/>
+                                <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="mhP-hx-8OP" kind="presentation" id="AKS-3Y-HO7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBe-eQ-1AG">
+                                <rect key="frame" x="10" y="822" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="FFn-iz-YGE" kind="unwind" unwindAction="comeBack:" id="mJg-Tf-XEO"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7vc-oT-Wkg" firstAttribute="trailing" secondItem="0FZ-KX-ljt" secondAttribute="trailing" constant="10" id="Fko-1W-FXN"/>
                             <constraint firstItem="7vc-oT-Wkg" firstAttribute="bottom" secondItem="0FZ-KX-ljt" secondAttribute="bottom" constant="10" id="GaK-BJ-bEg"/>
+                            <constraint firstItem="7vc-oT-Wkg" firstAttribute="bottom" secondItem="mBe-eQ-1AG" secondAttribute="bottom" constant="10" id="OZN-nm-G8J"/>
                             <constraint firstItem="2Te-mQ-YlP" firstAttribute="centerY" secondItem="Bz9-Kt-tc2" secondAttribute="centerY" id="Sw5-51-6x0"/>
+                            <constraint firstItem="mBe-eQ-1AG" firstAttribute="leading" secondItem="7vc-oT-Wkg" secondAttribute="leading" constant="10" id="ajo-ds-c2G"/>
                             <constraint firstItem="2Te-mQ-YlP" firstAttribute="centerX" secondItem="Bz9-Kt-tc2" secondAttribute="centerX" id="fxH-Ry-7c8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7vc-oT-Wkg"/>
@@ -100,6 +109,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXA-ct-sqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FFn-iz-YGE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="129.91071428571428"/>
         </scene>
@@ -139,7 +149,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jbe-5I-nvb" firstAttribute="trailing" secondItem="jIn-U3-TJN" secondAttribute="trailing" id="3yN-Ja-MoW"/>
                             <constraint firstItem="jIn-U3-TJN" firstAttribute="leading" secondItem="Jbe-5I-nvb" secondAttribute="leading" id="8DS-2j-Jc1"/>
@@ -175,14 +185,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jB-YA-N9r">
-                                <rect key="frame" x="351" y="822" width="53" height="30"/>
-                                <state key="normal" title="confirm"/>
+                                <rect key="frame" x="374" y="822" width="30" height="30"/>
+                                <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="Eek-8V-Wgi" kind="presentation" id="xJT-8l-Ite"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-IT-6P5">
+                                <rect key="frame" x="18" y="822" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="4aO-ao-SUQ" kind="unwind" unwindAction="comeBack:" id="Ewc-Uy-1C1"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a2n-vt-v1a" firstAttribute="trailing" secondItem="8jB-YA-N9r" secondAttribute="trailing" constant="10" id="1dZ-J0-tWD"/>
                             <constraint firstItem="6Dy-N8-oMb" firstAttribute="centerY" secondItem="Tn9-jH-Aef" secondAttribute="centerY" id="MRm-cu-kWS"/>
@@ -196,6 +214,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14D-3s-pDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4aO-ao-SUQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2798.5507246376815" y="129.91071428571428"/>
         </scene>
@@ -208,8 +227,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92z-WB-Ac6">
-                                <rect key="frame" x="92" y="388.5" width="230" height="119.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="183" y="436" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -220,8 +239,16 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="ua8-lq-BNT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-M5-psk">
+                                <rect key="frame" x="30" y="822" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="arB-mh-8Vz" kind="unwind" unwindAction="comeBack:" id="3UV-CI-xhT"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="92z-WB-Ac6" firstAttribute="centerX" secondItem="7E6-2F-2T1" secondAttribute="centerX" id="X38-Jb-4yc"/>
                             <constraint firstItem="92z-WB-Ac6" firstAttribute="centerY" secondItem="7E6-2F-2T1" secondAttribute="centerY" id="YlE-0W-lXR"/>
@@ -230,8 +257,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gRg-TX-RTR"/>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="92z-WB-Ac6" id="hZP-du-Z27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbw-Cn-KN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="arB-mh-8Vz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3660.8695652173915" y="129.91071428571428"/>
         </scene>
