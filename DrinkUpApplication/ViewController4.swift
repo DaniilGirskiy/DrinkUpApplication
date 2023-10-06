@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController4: UIViewController {
     @IBOutlet weak var inputTextField: UITextField!
-    var info = DrinkUpInformation()
+    var info: DrinkUpInformation!
     
     
     override func viewDidLoad() {
